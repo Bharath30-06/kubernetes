@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ReplicaSet
+metadata:
+  name: organic-aaprs
+  labels:
+    app: 
+    key: value
+spec:
+  replicas: 5 
+  selectors:
+    matchlabels: 
+    web: app
+  template:
+    metadata:
+      labels:
+        web: app 
+    spec:
+      containers:
+        - name:  devapp
+          image: muralisocial123/organic-app-web-latest
+          ports:
+            - containerPort:5656
