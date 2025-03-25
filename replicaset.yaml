@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ReplicaSet
 metadata:
-  name: organic-aaprs
+  name: organic-aps-rs
   labels:
     app: 
     key: value
